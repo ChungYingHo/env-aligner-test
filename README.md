@@ -57,6 +57,11 @@
 - [ ] 13. `rootDir` 傳存在的資料夾
 - [ ] 14. `rootDir` 傳很深的資料夾
 - [ ] 15. `rootDir` 傳同名但不同路徑的資料夾
+- [ ] 16. schema 跟 env 檔案不在同一層
+- [ ] 17. schema 不存在
+- [ ] 18. env 不存在
+- [ ] 19. schema 跟 env 都不存在
+
 
 ### CLI 檢查
 - [ ] 1. `npx env-aligner`
