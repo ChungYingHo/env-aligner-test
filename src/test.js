@@ -74,7 +74,7 @@ const test8options = {
 envAligner({checkOptions: test8options})
 
 // test rootDir setting
-console.log('The 11th test: custom rootDir as use default')
+console.log('The 11th test: custom rootDir as use application/project')
 envAligner({rootDir: 'use default'})
 
 // test rootDir setting with folder not exist

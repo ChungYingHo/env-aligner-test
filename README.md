@@ -11,7 +11,7 @@
 - [ ] 8. 全傳 `false`
 - [ ] 9. 全傳 `true`
 - [ ] 10. 傳兩個 `false`
-- [ ] 11. `rootDir` 傳 `'use default'`
+- [ ] 11. `rootDir` 傳 `'application/project'`
 - [ ] 12. `rootDir` 傳不存在的資料夾
 - [ ] 13. `rootDir` 傳存在的資料夾
 - [ ] 14. `rootDir` 傳很深的資料夾
@@ -52,7 +52,7 @@
 - [ ] 8. 全傳 `false`
 - [ ] 9. 全傳 `true`
 - [ ] 10. 傳兩個 `false`
-- [ ] 11. `rootDir` 傳 `'use default'`
+- [ ] 11. `rootDir` 傳 `'application/project'`
 - [ ] 12. `rootDir` 傳不存在的資料夾
 - [ ] 13. `rootDir` 傳存在的資料夾
 - [ ] 14. `rootDir` 傳很深的資料夾
