@@ -34,9 +34,9 @@ const test3options = {
 envAligner({checkOptions: test3options})
 
 // test custom options -2 
-console.log('The 6th test: custom options with isCheckEmpty false')
+console.log('The 6th test: custom options with isCheckEmptyValue false')
 const test4options = {
-  isCheckEmpty: false
+  isCheckEmptyValue: false
 }
 envAligner({checkOptions: test4options})
 
@@ -51,7 +51,7 @@ envAligner({checkOptions: test5options})
 console.log('The 8th test: custom options with all false')
 const test6options = {
   isCheckMissing: false,
-  isCheckEmpty: false,
+  isCheckEmptyValue: false,
   isCheckExtra: false
 }
 envAligner({checkOptions: test6options})
@@ -60,7 +60,7 @@ envAligner({checkOptions: test6options})
 console.log('The 9th test: custom options with all true')
 const test7options = {
   isCheckMissing: true,
-  isCheckEmpty: true,
+  isCheckEmptyValue: true,
   isCheckExtra: true
 }
 envAligner({checkOptions: test7options})
