@@ -91,16 +91,20 @@ const envAligner = require('env-aligner')
 
 // test rootDir setting with same name but at different level
 // console.log('The 15th test: custom rootDir as same name but at different level')
-// envAligner({rootDir: 'frontend'})
-// envAligner({rootDir: 'application/frontend'})
+// const test15names = {
+//   schemaName: '.env.sample',
+//   envName: '.env.local'
+// }
+// envAligner({rootDir: 'frontend',fileNames: test15names})
+// envAligner({rootDir: 'application/frontend',fileNames: test15names})
 
 // test if schema and env file not at same level
-// console.log('The 16th test: custom rootDir as same name but at different level')
-// const test16names = {
-//   schemaName: '.env.sample',
-//   envName: '.env'
-// }
-// envAligner({fileNames: test16names})
+console.log('The 16th test: custom rootDir as same name but at different level')
+const test16names = {
+  schemaName: '.env.sample',
+  envName: '.env'
+}
+envAligner({rootDir: 'application',fileNames: test16names})
 
 // test if schema not exist
 // console.log('The 17th test: custom schema file not exist')
@@ -119,9 +123,9 @@ const envAligner = require('env-aligner')
 // envAligner({fileNames: test18names})
 
 // test if schema and env file not exist
-console.log('The 19th test: custom schema and env file not exist')
-const test19names = {
-  schemaName: '.env.not_exist',
-  envName: '.env.not_exist'
-}
-envAligner({fileNames: test19names})
+// console.log('The 19th test: custom schema and env file not exist')
+// const test19names = {
+//   schemaName: '.env.not_exist',
+//   envName: '.env.not_exist'
+// }
+// envAligner({fileNames: test19names})

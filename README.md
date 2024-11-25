@@ -49,24 +49,24 @@
 
 ## JuiCheng
 ### 程式檢查
-- [ ] 1. 預設檢查
-- [ ] 2. 傳 `.env.sample` 跟 `.env.local`
-- [ ] 3. 只傳 `envName`: `.env.setting`
-- [ ] 4. 只傳 `schemaName`: `.env.schema`
-- [ ] 5. 只傳 `isCheckMissing`: `false`
-- [ ] 6. 只傳 `isCheckEmpty`: `false`
-- [ ] 7. 只傳 `isCheckExtra`: `false`
-- [ ] 8. 全傳 `false`
-- [ ] 9. 全傳 `true`
-- [ ] 10. 傳兩個 `false`
-- [ ] 11. `rootDir` 傳 `'application/project'`
-- [ ] 12. `rootDir` 傳不存在的資料夾
-- [ ] 13. `rootDir` 傳存在的資料夾
-- [ ] 14. `rootDir` 傳很深的資料夾
-- [ ] 15. `rootDir` 傳同名但不同路徑的資料夾
+- [x] 1. 預設檢查
+- [x] 2. 傳 `.env.sample` 跟 `.env.local`
+- [x] 3. 只傳 `envName`: `.env.setting`
+- [x] 4. 只傳 `schemaName`: `.env.schema`
+- [x] 5. 只傳 `isCheckMissing`: `false`
+- [x] 6. 只傳 `isCheckEmpty`: `false`
+- [x] 7. 只傳 `isCheckExtra`: `false`
+- [x] 8. 全傳 `false`
+- [x] 9. 全傳 `true`
+- [x] 10. 傳兩個 `false`
+- [x] 11. `rootDir` 傳 `'application/project'`
+- [x] 12. `rootDir` 傳不存在的資料夾
+- [x] 13. `rootDir` 傳存在的資料夾
+- [x] 14. `rootDir` 傳很深的資料夾
+- [x] 15. `rootDir` 傳同名但不同路徑的資料夾
 - [ ] 16. schema 跟 env 檔案不在同一層
 - [ ] 17. schema 不存在
-- [ ] 18. env 不存在
+- [x] 18. env 不存在
 - [ ] 19. schema 跟 env 都不存在
 
 
