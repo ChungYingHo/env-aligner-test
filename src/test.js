@@ -103,12 +103,12 @@ const envAligner = require('env-aligner')
 // envAligner({fileNames: test16names})
 
 // test if schema not exist
-console.log('The 17th test: custom schema file not exist')
-const test17names = {
-  schemaName: '.env.not_exist',
-  envName: '.env'
-}
-envAligner({fileNames: test17names})
+// console.log('The 17th test: custom schema file not exist')
+// const test17names = {
+//   schemaName: '.env.not_exist',
+//   envName: '.env'
+// }
+// envAligner({fileNames: test17names})
 
 // test if env not exist
 // console.log('The 18th test: custom env file not exist')
@@ -119,9 +119,9 @@ envAligner({fileNames: test17names})
 // envAligner({fileNames: test18names})
 
 // test if schema and env file not exist
-// console.log('The 19th test: custom schema and env file not exist')
-// const test19names = {
-//   schemaName: '.env.not_exist',
-//   envName: '.env.not_exist'
-// }
-// envAligner({fileNames: test19names})
+console.log('The 19th test: custom schema and env file not exist')
+const test19names = {
+  schemaName: '.env.not_exist',
+  envName: '.env.not_exist'
+}
+envAligner({fileNames: test19names})

@@ -24,9 +24,9 @@
 - [x] 14. `rootDir` 傳很深的資料夾：已補 `.env` 跟 `.env.example`
 - [x] 15. `rootDir` 傳同名但不同路徑的資料夾：沒啥意義的檢查
 - [x] 16. schema 跟 env 檔案不在同一層
-- [ ] 17. schema 不存在：沒過，沒噴錯
+- [x] 17. schema 不存在：沒過，沒噴錯
 - [x] 18. env 不存在：錯誤顯示同 #16
-- [ ] 19. schema 跟 env 都不存在：沒過，沒噴錯
+- [x] 19. schema 跟 env 都不存在：沒過，沒噴錯
 
 ### CLI 檢查
 - [x] 1. `npx env-aligner`
