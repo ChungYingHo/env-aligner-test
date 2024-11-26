@@ -64,26 +64,26 @@
 - [x] 13. `rootDir` 傳存在的資料夾
 - [x] 14. `rootDir` 傳很深的資料夾
 - [x] 15. `rootDir` 傳同名但不同路徑的資料夾
-- [ ] 16. schema 跟 env 檔案不在同一層
-- [ ] 17. schema 不存在
+- [x] 16. schema 跟 env 檔案不在同一層
+- [x] 17. schema 不存在
 - [x] 18. env 不存在
-- [ ] 19. schema 跟 env 都不存在
+- [x] 19. schema 跟 env 都不存在
 
 
 ### CLI 檢查
-- [ ] 1. `npx env-aligner`
-- [ ] 2. `npx env-aligner -h`
-- [ ] 3. `npx env-aligner -v`
-- [ ] 4. `npx env-aligner -s .env.sample`
-- [ ] 5. `npx env-aligner -e .env.local`
-- [ ] 6. `npx env-aligner -s .env.sample -e .env.local`
-- [ ] 7. `npx env-aligner --schema .env.sample --env .env.local`
-- [ ] 8. `npx env-aligner -m false`
-- [ ] 9. `npx env-aligner -m true`
-- [ ] 10. `npx env-aligner -n false`
-- [ ] 11. `npx env-aligner -x false`
-- [ ] 12. `npx env-aligner -m false -n false -x false`
-- [ ] 13. `npx env-aligner -m true -n true -x true`
-- [ ] 14. `npx env-aligner --missing false --empty false --extra false`
-- [ ] 15. `npx env-aligner -e .env.setting -s .env.schema` - 顛倒看抓不抓得到
-- [ ] 16. `npx env-aligner -e .env.setting -s .env.schema -m false -n false -x false`
+- [x] 1. `npx env-aligner`
+- [x] 2. `npx env-aligner -h`
+- [x] 3. `npx env-aligner -v`
+- [x] 4. `npx env-aligner -s .env.sample`
+- [x] 5. `npx env-aligner -e .env.local`
+- [x] 6. `npx env-aligner -s .env.sample -e .env.local`
+- [x] 7. `npx env-aligner --schema .env.sample --env .env.local`
+- [x] 8. `npx env-aligner -m false`
+- [x] 9. `npx env-aligner -m true`
+- [x] 10. `npx env-aligner -n false`
+- [x] 11. `npx env-aligner -x false`
+- [x] 12. `npx env-aligner -m false -n false -x false`
+- [x] 13. `npx env-aligner -m true -n true -x true`
+- [x] 14. `npx env-aligner --missing false --empty false --extra false`
+- [x] 15. `npx env-aligner -e .env.setting -s .env.schema` - 顛倒看抓不抓得到
+- [x] 16. `npx env-aligner -e .env.setting -s .env.schema -m false -n false -x false`
