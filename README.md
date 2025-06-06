@@ -8,12 +8,13 @@
 1. CLI
     - [ ] `env-aligner`：預期自動檢查 root 的 .env 跟 .env.example 的 missing key & missing value
     - [ ] `env-aligner --dir src/env`：預期檢查 src/env folder 的 .env 跟 .env.example
+    - [ ] `env-aligner --dir /src/env`：理論上有路徑錯誤，要報錯
     - [ ] `env-aligner --schema .env.schema`：預期自動檢查 root 的 .env 跟 .env.schema 的 missing key & missing value
     - [ ] `env-aligner --env .env.prod`：預期自動檢查 root 的 .env.prod 跟 .env.example 的 missing key & missing value
     - [ ] `env-aligner --schema .env.schema --env .env.prod`：預期自動檢查 root 的 .env.prod 跟 .env.schema 的 missing key & missing value
     - [ ] `env-aligner --schema .env.prod --env .env.schema`：呈上，但把 env 跟 schema 寫相反，理論還是會檢查，只是參照反過來
     - [ ] `env-aligner --dir --schema --env`：都不給值時應會以預設值測試 root 的 .env 跟 .env.example 的 missing key & missing value
-    - [ ] `env-aligner --dir /.devcontainer --schema config.example --env config.env`：檢查 /.devcontainer 的 config.env 跟 config.example 的 missing key & missing value
+    - [ ] `env-aligner --dir .devcontainer --schema config.example --env config.env`：檢查 .devcontainer 的 config.env 跟 config.example 的 missing key & missing value
     - [ ] `env-aligner --dir src/env --schema .env.example --env .env`：檢查 src/env 的 .env 跟 .env.example 的 missing key & missing value
     - [ ] `env-aligner --clone`：預期使用 root 的 .env.example 建立 .env
         - [ ] 原先就有 .env 時會報錯
@@ -28,9 +29,9 @@
     - [ ] `env-aligner --strict --align false`：測試多傳參數 false `env-aligner --strict`
     - [ ] `env-aligner --align`：非嚴格模式下做 align，預期會報錯
     - [ ] `env-aligner --clone --strict`：預期 clone 優先級別會比 strict 高，所以只會 clone 不會檢查。
-    - [ ] `env-aligner --dir /.devcontainer --schema config.example --env config.env --strict`：測試會以嚴格模式檢查 /.devcontainer 的 config.env 跟 config.example 的 missing key & missing value & extra key
-    - [ ] `env-aligner --dir /.devcontainer --schema config.example --env config.env --strict --align`：測試會以嚴格模式檢查 /.devcontainer 的 config.env 跟 config.example 的 missing key & missing value & extra key，並執行排列
-    - [ ] `env-aligner --dir /.devcontainer --schema config.example --env config.env --clone`：測試會以嚴格模式檢查 /.devcontainer 的 config.example 建立 .env file，而多傳的 `--env config.env` 不會影響運作
+    - [ ] `env-aligner --dir .devcontainer --schema config.example --env config.env --strict`：測試會以嚴格模式檢查 .devcontainer 的 config.env 跟 config.example 的 missing key & missing value & extra key
+    - [ ] `env-aligner --dir .devcontainer --schema config.example --env config.env --strict --align`：測試會以嚴格模式檢查 .devcontainer 的 config.env 跟 config.example 的 missing key & missing value & extra key，並執行排列
+    - [ ] `env-aligner --dir .devcontainer --schema config.example --env config.env --clone`：測試會以嚴格模式檢查 .devcontainer 的 config.example 建立 .env file，而多傳的 `--env config.env` 不會影響運作
     - [ ] `env-aligner --schema .env.not-found`：沒有該檔案，預期噴錯
     - [ ] `env-aligner --env .env.not-found`：沒有該檔案，預期噴錯
     - [ ] `env-aligner --dir not-found`：沒有該路徑，預期噴錯
@@ -46,7 +47,7 @@
     - [ ] `env-aligner --schema .env.schema --env .env.prod`：預期自動檢查 root 的 .env.prod 跟 .env.schema 的 missing key & missing value
     - [ ] `env-aligner --schema .env.prod --env .env.schema`：呈上，但把 env 跟 schema 寫相反，理論還是會檢查，只是參照反過來
     - [ ] `env-aligner --dir --schema --env`：都不給值時應會以預設值測試 root 的 .env 跟 .env.example 的 missing key & missing value
-    - [ ] `env-aligner --dir /.devcontainer --schema config.example --env config.env`：檢查 /.devcontainer 的 config.env 跟 config.example 的 missing key & missing value
+    - [ ] `env-aligner --dir .devcontainer --schema config.example --env config.env`：檢查 .devcontainer 的 config.env 跟 config.example 的 missing key & missing value
     - [ ] `env-aligner --dir src/env --schema .env.example --env .env`：檢查 src/env 的 .env 跟 .env.example 的 missing key & missing value
     - [ ] `env-aligner --clone`：預期使用 root 的 .env.example 建立 .env
         - [ ] 原先就有 .env 時會報錯
@@ -61,9 +62,9 @@
     - [ ] `env-aligner --strict --align false`：測試多傳參數 false `env-aligner --strict`
     - [ ] `env-aligner --align`：非嚴格模式下做 align，預期會報錯
     - [ ] `env-aligner --clone --strict`：預期 clone 優先級別會比 strict 高，所以只會 clone 不會檢查。
-    - [ ] `env-aligner --dir /.devcontainer --schema config.example --env config.env --strict`：測試會以嚴格模式檢查 /.devcontainer 的 config.env 跟 config.example 的 missing key & missing value & extra key
-    - [ ] `env-aligner --dir /.devcontainer --schema config.example --env config.env --strict --align`：測試會以嚴格模式檢查 /.devcontainer 的 config.env 跟 config.example 的 missing key & missing value & extra key，並執行排列
-    - [ ] `env-aligner --dir /.devcontainer --schema config.example --env config.env --clone`：測試會以嚴格模式檢查 /.devcontainer 的 config.example 建立 .env file，而多傳的 `--env config.env` 不會影響運作
+    - [ ] `env-aligner --dir .devcontainer --schema config.example --env config.env --strict`：測試會以嚴格模式檢查 .devcontainer 的 config.env 跟 config.example 的 missing key & missing value & extra key
+    - [ ] `env-aligner --dir .devcontainer --schema config.example --env config.env --strict --align`：測試會以嚴格模式檢查 .devcontainer 的 config.env 跟 config.example 的 missing key & missing value & extra key，並執行排列
+    - [ ] `env-aligner --dir .devcontainer --schema config.example --env config.env --clone`：測試會以嚴格模式檢查 .devcontainer 的 config.example 建立 .env file，而多傳的 `--env config.env` 不會影響運作
     - [ ] `env-aligner --schema .env.not-found`：沒有該檔案，預期噴錯
     - [ ] `env-aligner --env .env.not-found`：沒有該檔案，預期噴錯
     - [ ] `env-aligner --dir not-found`：沒有該路徑，預期噴錯
