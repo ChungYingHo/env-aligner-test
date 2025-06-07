@@ -42,6 +42,7 @@
     - [x] `npx env-aligner --dir not-found`：沒有該路徑，預期噴錯
     - [x] `npx env-aligner --dir not-found --schema env.not-found --env env.not-found`：：沒有該檔案與路徑，預期噴錯
     - [x] `npx env-aligner --help`：預期顯示幫助指令
+    - [x] `npm run check-env`：預期腳本會運行
 
 ### Jui-Cheng
 1. CLI
@@ -76,3 +77,4 @@
     - [ ] `npx env-aligner --dir not-found`：沒有該路徑，預期噴錯
     - [ ] `npx env-aligner --dir not-found --schema env.not-found --env env.not-found`：：沒有該檔案與路徑，預期噴錯
     - [ ] `npx env-aligner --help`：預期顯示幫助指令
+    - [ ] `npm run check-env`：預期腳本會運行
