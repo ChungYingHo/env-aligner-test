@@ -8,12 +8,12 @@
 1. CLI
     - [ ] `npx env-aligner`：預期自動檢查 root 的 .env 跟 .env.example 的 missing key & missing value
     - [ ] `npx env-aligner --dir src/env`：預期檢查 src/env folder 的 .env 跟 .env.example
-    - [ ] `npx env-aligner --dir /src/env`：理論上有路徑錯誤，要報錯
     - [ ] `npx env-aligner --schema .env.schema`：預期自動檢查 root 的 .env 跟 .env.schema 的 missing key & missing value
     - [ ] `npx env-aligner --env .env.prod`：預期自動檢查 root 的 .env.prod 跟 .env.example 的 missing key & missing value
     - [ ] `npx env-aligner --schema .env.schema --env .env.prod`：預期自動檢查 root 的 .env.prod 跟 .env.schema 的 missing key & missing value
     - [ ] `npx env-aligner --schema .env.prod --env .env.schema`：呈上，但把 env 跟 schema 寫相反，理論還是會檢查，只是參照反過來
-    - [ ] `npx env-aligner --dir --schema --env`：都不給值時應會以預設值測試 root 的 .env 跟 .env.example 的 missing key & missing value
+    - [ ] `npx env-aligner --schema config.example --env config.env`：預期自動到有對應檔案的 .devcontainer 中檢查 config.example 跟 config.env 的 missing key & missing value
+    - [ ] `npx env-aligner --dir --schema --env`：都不給值時會有錯誤提示
     - [ ] `npx env-aligner --dir .devcontainer --schema config.example --env config.env`：檢查 .devcontainer 的 config.env 跟 config.example 的 missing key & missing value
     - [ ] `npx env-aligner --dir src/env --schema .env.example --env .env`：檢查 src/env 的 .env 跟 .env.example 的 missing key & missing value
     - [ ] `npx env-aligner --clone`：預期使用 root 的 .env.example 建立 .env
@@ -46,7 +46,8 @@
     - [ ] `npx env-aligner --env .env.prod`：預期自動檢查 root 的 .env.prod 跟 .env.example 的 missing key & missing value
     - [ ] `npx env-aligner --schema .env.schema --env .env.prod`：預期自動檢查 root 的 .env.prod 跟 .env.schema 的 missing key & missing value
     - [ ] `npx env-aligner --schema .env.prod --env .env.schema`：呈上，但把 env 跟 schema 寫相反，理論還是會檢查，只是參照反過來
-    - [ ] `npx env-aligner --dir --schema --env`：都不給值時應會以預設值測試 root 的 .env 跟 .env.example 的 missing key & missing value
+    - [ ] `npx env-aligner --schema config.example --env config.env`：預期自動到有對應檔案的 .devcontainer 中檢查 config.example 跟 config.env 的 missing key & missing value
+    - [ ] `npx env-aligner --dir --schema --env`：都不給值時會有錯誤提示
     - [ ] `npx env-aligner --dir .devcontainer --schema config.example --env config.env`：檢查 .devcontainer 的 config.env 跟 config.example 的 missing key & missing value
     - [ ] `npx env-aligner --dir src/env --schema .env.example --env .env`：檢查 src/env 的 .env 跟 .env.example 的 missing key & missing value
     - [ ] `npx env-aligner --clone`：預期使用 root 的 .env.example 建立 .env
